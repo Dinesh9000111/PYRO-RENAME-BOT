@@ -15,8 +15,7 @@ class Bot(Client):
             bot_token=Config.BOT_TOKEN,
             workers=min(32, os.cpu_count() + 4),
             plugins={"root": "plugins"},
-            sleep_threshold=15,
-            max_concurrent_transmissions=Config.MAX_CONCURRENT_TRANSMISSIONS,
+            sleep_threshold=15
         )
 
     async def start(self):
