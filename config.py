@@ -26,20 +26,20 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "24692763")
+    API_HASH  = os.environ.get("API_HASH", "8e3840420e9d0895db3231d87c6d21a5")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7902449532:AAE6s7N9936BMcbPs7-oBjrlZI-ASDFYpbs") 
    
     # database config
     DB_NAME = os.environ.get("DB_NAME","Cluster0")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://jihehod332:OM69Q4epgIEcN3xk@cluster0.qzw02.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
  
     # other configs
     BOT_UPTIME  = time.time()
-    START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"))
+    START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/4wRW2pv4/photo-2025-04-12-02-55-49-7492255008293912596.jpg")
+    ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '8171835867').split()]
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002654939662") 
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL"-1002654939662))
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
