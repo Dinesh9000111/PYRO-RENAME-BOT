@@ -39,7 +39,7 @@ class Config(object):
     START_PIC   = os.environ.get("START_PIC", "https://i.ibb.co/4wRW2pv4/photo-2025-04-12-02-55-49-7492255008293912596.jpg")
     ADMIN       = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '8171835867').split()]
     FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002654939662") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002654939662"))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL") or -1002654939662)
     MAX_CONCURRENT_TRANSMISSIONS = int(os.environ.get("MAX_CONCURRENT_TRANSMISSIONS", "2")) # Set the maximum amount of concurrent transmissions (uploads & downloads).
     
     # wes response configuration     
